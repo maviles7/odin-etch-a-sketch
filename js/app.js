@@ -14,5 +14,9 @@ function initGrid() {
         const gridBox = document.createElement('div'); // create a new div element 
         gridBox.classList.add('grid-box'); // add a class to the new div eleemt 
         gridContainer.appendChild(gridBox);
+
+        // newDiv.addEventListener('mouseover', () => {
+        //     newDiv.style.backgroundColor = 'black';
+        // });
     }
 };
