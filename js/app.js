@@ -9,4 +9,10 @@ initGrid();
 
 function initGrid() {
     let gridSize = 16;
+
+    for (let i = 0; i < gridSize * gridSize; i++) {
+        const gridBox = document.createElement('div'); // create a new div element 
+        gridBox.classList.add('grid-box'); // add a class to the new div eleemt 
+        gridContainer.appendChild(gridBox);
+    }
 };
