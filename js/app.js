@@ -15,8 +15,8 @@ function initGrid() {
         gridBox.classList.add('grid-box'); // add a class to the new div eleemt 
         gridContainer.appendChild(gridBox);
 
-        // newDiv.addEventListener('mouseover', () => {
-        //     newDiv.style.backgroundColor = 'black';
-        // });
+        gridBox.addEventListener('mouseover', () => {
+            gridBox.style.backgroundColor = 'black';
+        });
     }
 };
