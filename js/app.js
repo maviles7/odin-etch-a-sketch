@@ -1,9 +1,15 @@
-// create a div in the body of the html to insert a new div into 
-// this is the div that will be manipulated w/JS 
+
+// variables/cached elements 
 
 const gridContainer = document.querySelector('.grid-container');
 
-// if mouse hovers over the div, the div will change color
+const resetBtn = document.getElementById('reset');
+
+// event listeners
+
+resetBtn.addEventListener('click', resetGrid);
+
+// functions 
 
 initGrid();
 
@@ -20,3 +26,10 @@ function initGrid() {
         });
     }
 };
+
+function resetGrid() {
+    const gridBoxes = document.querySelectorAll('.grid-box');
+    gridBoxes.forEach((box) => {
+        box.style.backgroundColor = '';
+    });
+}
