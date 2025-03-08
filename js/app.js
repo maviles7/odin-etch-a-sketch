@@ -14,7 +14,7 @@ resetBtn.addEventListener('click', resetGrid);
 initGrid();
 
 function initGrid() {
-    let gridSize = 16;
+    let gridSize = 27;
 
     for (let i = 0; i < gridSize * gridSize; i++) {
         const gridBox = document.createElement('div'); // create a new div element 
